@@ -1,6 +1,5 @@
 <body>
     <div style="
-    border-radius: 35px 35px 35px 3px;
     background: #bde0fe;
     padding: 20px;
     width: 500px;
