@@ -1,16 +1,4 @@
-<body>
-    <div style="
-    border-radius: 35px 35px 35px 3px;
-    background: #bde0fe;
-    padding: 20px;
-    width: 500px;
-    height: 34px;
-    font-size: 24px;
-    font-family: 'Lexend';
-    ">
-    <b>Hi! I'm David</b>
-    </div>
-</body>
+# Hi! I'm David
 
 ___ 
 This is my markdown document on GitHub
@@ -30,3 +18,5 @@ I like to watch movies, some of my favorite movies is:
     - _Action_
     - _Sci-fi_
     - _Thriller_
+
+[My portfolio website](davidwahyuds.wordpress.com)
