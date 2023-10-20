@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mc Donalds Dummy Website</title>
     <link rel="stylesheet" href="index.css" />
+
     
 
     <!-- href link for small icon on webpage -->
@@ -145,8 +146,8 @@
           </ul>
           <figure>
             <img
-              src="https://cdn.discordapp.com/attachments/919804526440120360/1164942379489435718/image.png?ex=65450c22&is=65329722&hm=26de88536b1bb9bf4a32a298590d54c05d967b8a9ee05179d57e30e62a8eaaad&"
-              alt="A penguin swims under the deep sea."
+              src="https://www.mcdonalds.com.cy/application/files/4416/7525/1900/HUT_POUTS.png"
+              alt="Mc Donald's Promo"
             />
             <figcaption>Promo <em>McDonald's</em> Indonesia.</figcaption>
           </figure>
@@ -174,14 +175,19 @@
           <fieldset>
             <legend>Personal Data:</legend>
             <div>
-              <label for="fullName">Full Name:</label>
-              <input id="fullName" type="text" required />
+              <label for="fullName">Full Name :</label>
+              <input id="fullName" type="text" required/>
             </div>
 
             <div>
-              <label for="email">Email:</label>
-              <input id="email" type="email" required />
+              <label for="email">Email :</label>
+              <input id="email" type="email" required/>
             </div>
+
+            <div>
+                <label for="phone">Phone Number : <br></label>
+                <input id="phoneNumber" type="number" required/>
+              </div>
 
             <div>
               <p>Subscribe to our Newsletter?</p>
@@ -231,13 +237,14 @@
               <input
                 type="file"
                 id="photo"
-                name="myPenguinPhoto"
+                name="frontHome"
                 required
                 accept="image/png, image/jpeg"
               />
             </div>
           </fieldset>
-          <button type="submit">Submit</button>
+          <button class="submitButton" onclick="showAlert()">Submit</button>
+          <script src="index.js"></script>
         </form>
       </section>
     </main>
