@@ -2,29 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Mc Donalds Dummy Website"
-    />
+    <meta name="description" content="Mc Donalds Dummy Website" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="David Wahyu Grahadi" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mc Donalds Dummy Website</title>
     <link rel="stylesheet" href="index.css" />
 
-    
-
-    <!-- href link for small icon on webpage -->
-
     <link
       rel="icon"
-      href="https://d2vuyvo9qdtgo9.cloudfront.net/assets/img/brand/logo_mcd.png" 
+      href="https://d2vuyvo9qdtgo9.cloudfront.net/assets/img/brand/logo_mcd.png"
       type="image/x-icon"
     />
   </head>
   <body>
     <nav>
-      <span class="mobile">
+      <span onclick="openNav()" class="mobile">
         <img
           src="https://cdn.discordapp.com/attachments/919804526440120360/1164921769333895250/icons8-hamburger-64.png?ex=6544f8f1&is=653283f1&hm=36edc53274c9dfb57417413842e2c4f10c876f444ee0583514e5fc6167830328&"
           alt="Hamburger Icon"
@@ -38,113 +31,186 @@
       </span>
 
       <ul class="desktop">
-        <li class="navigationMenu"><a style="text-decoration:none;" href="#">Home</a></li>
-        <li class="navigationMenu"><a style="text-decoration:none;" href="#factsBreakfast">Why Breakfast?</a></li>
-        <li class="navigationMenu"><a style="text-decoration:none;
-                                            width: 125px;" href="#orderNow">🍔 Order Now!</a></li>
+        <li class="navigationMenu">
+          <a style="text-decoration: none" href="#">Home</a>
+        </li>
+        <li class="navigationMenu">
+          <a style="text-decoration: none; width: 200px" href="#factsBreakfast"
+            >Why Breakfast?</a
+          >
+        </li>
+        <li
+          class="navigationMenu"
+          onclick="document.getElementById('form-section').style.display='block'"
+        >
+          <a style="text-decoration: none; width: 125px" href="#orderNow"
+            >🍔 Order Now!</a
+          >
+        </li>
       </ul>
     </nav>
+
+    <!-- Sidenav atau Hamburger Menu -->
+    <div id="mcdSidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Home</a>
+      <a href="#factsBreakfast">Why Breakfast?</a>
+      <a href="#ordernow">🍔 Order Now!</a>
+    </div>
+    <!-- end of side nav-->
+
     <header class="full-screen" id="header">
-      <h1>Mc Donalds</h1>
-      <p style="text-align: left;
-                padding-left: 20px;">I'm Lovin it!</p>
+      <section class="header-section">
+        <h1>Mc Donalds</h1>
+        <p style="text-align: left; padding-left: 20px">I'm Lovin it!</p>
+      </section>
     </header>
     <main>
       <section id="picBreakfast">
-        <h2 style="font-size: 1.8rem;">Breakfast</h2>
-        <span class="grid-container">
-          <span id="item-1">
-            <img class="imgBreakfast"
+        <h2 style="font-size: 1.8rem">Breakfast</h2>
+        <div class="grid-container">
+          <div id="item-1">
+            <img
+              class="imgBreakfast"
               src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/hRmrU0qHnXMj5CZ3qLvt.webp"
               alt="Egg and cheese muffin Mc Donald's"
             />
-            <p style="text-align: center;
-                    margin-top: 0;
-                    font-size: 1.2rem;
-                    font-weight: 550;">
-                    Egg and Cheese Muffin
-                </p>
-          </span>
-          <span id="item-2">
-            <img class="imgBreakfast"
+            <p
+              style="
+                text-align: center;
+                margin-top: 0;
+                font-size: 1.2rem;
+                font-weight: 550;
+              "
+            >
+              Egg and Cheese Muffin
+            </p>
+          </div>
+          <div id="item-2">
+            <img
+              class="imgBreakfast"
               src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/UGxWzYmlGDLUpzhrhaBT.webp"
-              alt="Chicken Muffin McDonald's "
+              alt="Chicken Muffin McDonald's"
             />
-            <p style="text-align: center;
-                    margin-top: 0;
-                    font-size: 1.2rem;
-                    font-weight: 550;">
-                    Chicken Muffin
-                </p>
-          </span>
-          <span id="item-3">
-            <img class="imgBreakfast"
+            <p
+              style="
+                text-align: center;
+                margin-top: 0;
+                font-size: 1.2rem;
+                font-weight: 550;
+              "
+            >
+              Chicken Muffin
+            </p>
+          </div>
+          <div id="item-3">
+            <img
+              class="imgBreakfast"
               src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/e4uy88JKbOpcdoJ3EXJO.webp"
               alt="Sausage McMuffin McDonald's "
             />
-            <p style="text-align: center;
-                    margin-top: 0;
-                    font-size: 1.2rem;
-                    font-weight: 550;">
-                    Sausage McMuffin
-                </p>
-          </span>
-          <span id="item-4">
-            <img class="imgBreakfast"
+            <p
+              style="
+                text-align: center;
+                margin-top: 0;
+                font-size: 1.2rem;
+                font-weight: 550;
+              "
+            >
+              Sausage McMuffin
+            </p>
+          </div>
+          <div id="item-4">
+            <img
+              class="imgBreakfast"
               src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/PYlJyb4lmSQcFsXktwmC.webp"
               alt="Egg McMuffin McDonald's "
             />
-            <p style="text-align: center;
-                    margin-top: 0;
-                    font-size: 1.2rem;
-                    font-weight: 550;">
-                    Egg McMuffin
-                </p>
-          </span>
-          <span id="item-5">
-            <img class="imgBreakfast"
+            <p
+              style="
+                text-align: center;
+                margin-top: 0;
+                font-size: 1.2rem;
+                font-weight: 550;
+              "
+            >
+              Egg McMuffin
+            </p>
+          </div>
+          <div id="item-5">
+            <img
+              class="imgBreakfast"
               src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/ILs2kh4ej7YjJzIfsf2d.webp"
               alt="Chicken Muffin with Egg McDonald's "
             />
-            <p style="text-align: center;
-                    margin-top: 0;
-                    font-size: 1.2rem;
-                    font-weight: 550;">
-                    Chicken Muffin with Egg
-                </p>
-          </span>
-          <span id="item-6">
-            <img class="imgBreakfast"
+            <p
+              style="
+                text-align: center;
+                margin-top: 0;
+                font-size: 1.2rem;
+                font-weight: 550;
+              "
+            >
+              Chicken Muffin with Egg
+            </p>
+          </div>
+          <div id="item-6">
+            <img
+              class="imgBreakfast"
               src="https://d2vuyvo9qdtgo9.cloudfront.net/foods/October2023/l47DeJBbY77Th47JfIAn.webp"
               alt="Sausage Wrap McDonald's "
             />
-            <p  id="factsBreakfast" style="text-align: center;
-                    margin-top: 0;
-                    font-size: 1.2rem;
-                    font-weight: 550;">
-                    Sausage Wrap
-                </p>
-          </span>
-        </span>
+            <p
+              id="factsBreakfast"
+              style="
+                text-align: center;
+                margin-top: 0;
+                font-size: 1.2rem;
+                font-weight: 550;
+              "
+            >
+              Sausage Wrap
+            </p>
+          </div>
+        </div>
       </section>
 
       <section>
-        <h2 style="font-size: 1.8rem;">Why we need to <br> have a breakfast?</h2>
+        <h2 style="font-size: 1.8rem">
+          Why we need to <br />
+          have a breakfast?
+        </h2>
         <div class="flex-container">
           <ul>
-            <li style="font-size: 1.1rem;
-                        margin: 5px;">
-                <strong> Essential Nutrients: </strong> Breakfast helps kickstart your metabolism after a night's sleep. It replenishes the glycogen stores that supply energy to your brain and muscles. A balanced breakfast provides essential nutrients like vitamins, minerals, fiber, and protein, which are crucial for overall health and well-being.
+            <li style="font-size: 1.1rem; margin: 5px">
+              <strong> Essential Nutrients: </strong> Breakfast helps kickstart
+              your metabolism after a night's sleep. It replenishes the glycogen
+              stores that supply energy to your brain and muscles. A balanced
+              breakfast provides essential nutrients like vitamins, minerals,
+              fiber, and protein, which are crucial for overall health and
+              well-being.
             </li>
-            <li style="font-size: 1.1rem;
-                        margin: 5px;">
-                <strong>Boosts Cognitive Function: </strong> Eating a nutritious breakfast has been linked to improved cognitive function, memory, and concentration. It provides the necessary glucose to the brain, enhancing alertness and mental performance. This is particularly crucial for students, professionals, and anyone requiring mental acuity in the morning.    
+            <li style="font-size: 1.1rem; margin: 5px">
+              <strong>Boosts Cognitive Function: </strong> Eating a nutritious
+              breakfast has been linked to improved cognitive function, memory,
+              and concentration. It provides the necessary glucose to the brain,
+              enhancing alertness and mental performance. This is particularly
+              crucial for students, professionals, and anyone requiring mental
+              acuity in the morning.
             </li>
-            <li style="font-size: 1.1rem;
-                        margin: 5px;">
-                <strong> Weight Management: </strong>Contrary to the misconception that skipping breakfast aids weight loss, research suggests that regular breakfast consumption can actually assist in weight management. A balanced breakfast can help regulate appetite and reduce the likelihood of overeating later in the day. It also helps stabilize blood sugar levels, reducing cravings for sugary or high-calorie snacks.
+            <li style="font-size: 1.1rem; margin: 5px">
+              <strong> Weight Management: </strong>Contrary to the misconception
+              that skipping breakfast aids weight loss, research suggests that
+              regular breakfast consumption can actually assist in weight
+              management. A balanced breakfast can help regulate appetite and
+              reduce the likelihood of overeating later in the day. It also
+              helps stabilize blood sugar levels, reducing cravings for sugary
+              or high-calorie snacks.
             </li>
           </ul>
+
           <figure>
             <img
               src="https://www.mcdonalds.com.cy/application/files/4416/7525/1900/HUT_POUTS.png"
@@ -169,85 +235,99 @@
           ></iframe>
         </div>
       </section>
+      <button
+        onclick="document.getElementById('form-section').style.display='block'"
+        style="
+          width: 100%;
+          font-family: Poppins;
+          font-size: 2rem;
+          font-weight: 600;
+        "
+        class="orderButton"
+      >
+        Order Now!
+      </button>
+      <div id="form-section" class="modal">
+        <span
+          onclick="document.getElementById('form-section').style.display='none'"
+          class="close"
+          title="Close Modal"
+          >&times;</span
+        >
+        <h1 style="color: white">Order Now!</h1>
+        <form class="modal-content" action="#">
+          <div class="container">
+            <h2>Personal Data:</h2>
 
-      <section id="form-section">
-        <h2 id="orderNow">Order Now!</h2>
-        <form action="#">
-          <fieldset>
-            <legend>Personal Data:</legend>
-            <div>
-              <label for="fullName">Full Name :</label>
-              <input id="fullName" type="text" required/>
-            </div>
+            <label for="fullName">Full Name :</label>
+            <input id="fullName" type="text" required />
 
-            <div>
-              <label for="email">Email :</label>
-              <input id="email" type="email" required/>
-            </div>
+            <label for="email">Email :</label>
+            <input id="email" type="email" required />
 
-            <div>
-                <label for="phone">Phone Number : <br></label>
-                <input id="phoneNumber" type="number" required/>
-              </div>
+            <label for="phone">Phone Number : <br /></label>
+            <input id="phoneNumber" type="number" required />
 
-            <div>
-              <p>Subscribe to our Newsletter?</p>
-              <input type="radio" id="yes" name="isIndonesia" value="Male" />
-              <label for="yes">Yes</label>
-              <input type="radio" id="no" name="isIndonesia" value="Female" />
-              <label for="no">No</label>
+            <p>Subscribe to our Newsletter?</p>
+            <input type="radio" id="yes" name="isIndonesia" value="Male" />
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="isIndonesia" value="Female" />
+            <label for="no">No</label>
+
+            <h2>Orders:</h2>
+            <p>What you want to order?</p>
+            <textarea rows="2"></textarea>
+            <p>Full Address</p>
+            <textarea rows="3"></textarea>
+            <p>Extra</p>
+            <input
+              id="pickle"
+              type="checkbox"
+              name="personality"
+              value="pickle"
+            />
+            <label for="pickle">Pickle</label>
+            <input
+              id="sauce"
+              type="checkbox"
+              name="personality"
+              value="sauce"
+            />
+            <label for="sauce">Sauce</label>
+            <input
+              id="Veggies"
+              type="checkbox"
+              name="personality"
+              value="Veggies"
+            />
+            <label for="Veggies">Veggies</label>
+
+            <p>Upload your front house, so we can easily find you 😉 :</p>
+            <input
+              type="file"
+              id="photo"
+              name="frontHome"
+              required
+              accept="image/png, image/jpeg"
+            />
+
+            <div class="clearfix">
+              <button
+                type="button"
+                onclick="document.getElementById('form-section').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancel
+              </button>
+              <button type="submit" class="submitbtn" onclick="showAlert()">
+                Submit
+              </button>
             </div>
-          </fieldset>
-          <fieldset>
-            <legend>Orders:</legend>
-            <div>
-                <p>What you want to order?</p>
-                <textarea rows="2"></textarea>
-              </div>
-            <div>
-            <div>
-                <p>Full Address</p>
-                <textarea rows="3"></textarea>
-              </div>
-            <div>
-              <p>Extra</p>
-              <input
-                id="pickle"
-                type="checkbox"
-                name="personality"
-                value="pickle"
-              />
-              <label for="pickle">Pickle</label>
-              <input
-                id="sauce"
-                type="checkbox"
-                name="personality"
-                value="sauce"
-              />
-              <label for="sauce">Sauce</label>
-              <input
-                id="Veggies"
-                type="checkbox"
-                name="personality"
-                value="Veggies"
-              />
-              <label for="Veggies">Veggies</label>
-            </div>
-            <div>
-              <p>Upload your front house, so we can easily find you 😉 :</p>
-              <input
-                type="file"
-                id="photo"
-                name="frontHome"
-                required
-                accept="image/png, image/jpeg"
-              />
-            </div>
-          </fieldset>
-          <button class="submitButton" onclick="showAlert()">Submit</button>
-          <script src="index.js"></script>
+            <!-- <button class="submitButton" onclick="showAlert()">Submit</button> -->
+            <script src="index.js"></script>
+          </div>
         </form>
-      </section>
+      </div>
     </main>
   </body>
 </html>

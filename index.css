@@ -1,181 +1,315 @@
 body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-  }
-  
-  section {
-    margin: 0 16px;
-  }
-  
-  section.full-screen {
-    margin: 0;
-  }
-  
-  nav {
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 52px;
-    box-shadow: #333333;
-  }
-  
-  nav > ul {
-    margin-left: auto;
-    margin-right: 16px;
-  }
-  
-  nav > ul > li {
-    display: inline-block;
-  }
-  
-  nav > span > img {
-    height: 32px;
-    width: auto;
-    padding: 8px;
-  }
-  
-  nav > span {
-    display: flex;
-    align-items: center;
-  }
-  
-  header {
-    text-align: center;
-    color: white;
-    background-color: #222222;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 48px;
-  }
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
 
-  a {
-    color: inherit;
-  }
+section {
+  margin: 0 16px;
+}
 
-  .navigationMenu {
-    text-align: center;
-    color: white;
-    padding-top: 10px;
-    border-radius: 5px;
-    background: #FFC72C;
-    font-weight: 550;
-    width: 130px;
-    height: 40px;
-  }
-  
-  nav .circle-red {
-    font-size: 8px;
-    background-color: red;
-    border-radius: 100%;
-    width: 16px;
-    height: 16px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 8px;
-    right: -8px;
-  }
-  
-  .relative-container {
-    position: relative;
-  }
-  
-  header h1 {
-    margin: 4px;
-  }
+.header-section {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
 
-  h1 {
-    font-size: 2rem;
-    text-align: left;
-    padding-left: 15px;
-  }
-  
-  header p {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-  
-  img {
-    width: 100%;
-  }
-  
-  h2 {
-    text-align: center;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 4px 4px;
-    margin: 8px 0;
-    display: block;
-  }
-  
-  #form-section {
-    background-color: #333333;
-    color: white;
-    padding: 8px;
-    margin-top: 16px;
-  }
+nav {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  box-shadow: #333333;
+}
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+nav > ul {
+  margin-left: auto;
+  margin-right: 16px;
+}
 
-  .imgBreakfast{
-    display: block;
-    max-width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  #form-section form {
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .submitButton{
-    color: white;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 4px;
-    width: 100%;
-    padding: 8px 16px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-  }
+nav > ul > li {
+  display: inline-block;
+}
 
+nav > span > img {
+  height: 32px;
+  width: auto;
+  padding: 8px;
+}
+
+nav > span {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  color: white;
+  background-color: #222222;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 48px;
+}
+
+a {
+  color: inherit;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f3c441;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.navigationMenu {
+  text-align: center;
+  color: white;
+  padding: 12px 10px 0px 10px;
+  border-radius: 5px;
+  background: #ffc72c;
+  font-weight: 550;
+  width: 130px;
+  height: 40px;
+}
+
+nav ul {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.relative-container {
+  position: relative;
+}
+
+header h1 {
+  margin: 4px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 15px;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 4px 4px;
+  margin: 8px 0;
+  display: block;
+}
+
+#form-section {
+  color: rgb(36, 35, 37);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.imgBreakfast {
+  display: block;
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.orderButton {
+  justify-content: center;
+  display: flex;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #ffc72c;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and submit buttons and add an equal width */
+.cancelbtn,
+.submitbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+#form-section form {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submitButton {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+@media only screen and (max-width: 1023px) {
   .mobile {
+    display: block;
+  }
+
+  .desktop {
     display: none;
   }
-  
-  .desktop {
-    display: block;
+}
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  @media only screen and (max-width: 1023px) {
-    .mobile {
-      display: block;
-    }
-  
-    .desktop {
-      display: none;
-    }
+}
 
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .submitbtn {
+    width: 100%;
   }
-  @media (max-width: 600px){
-    .grid-container{
-        grid-template-columns: 1fr 1fr;
-    }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
   }
-  
+  .sidenav a {
+    font-size: 18px;
+  }
+}
