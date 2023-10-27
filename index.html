@@ -57,7 +57,11 @@
       >
       <a href="#">Home</a>
       <a href="#factsBreakfast">Why Breakfast?</a>
-      <a href="#ordernow">🍔 Order Now!</a>
+      <a
+        onclick="document.getElementById('form-section').style.display='block'"
+        href="#ordernow"
+        >🍔 Order Now!</a
+      >
     </div>
     <!-- end of side nav-->
 
@@ -254,9 +258,10 @@
           title="Close Modal"
           >&times;</span
         >
-        <h1 style="color: white">Order Now!</h1>
+
         <form class="modal-content" action="#">
           <div class="container">
+            <h2 style="font-size: 3rem; color: #ffc72c">Order Now!</h2>
             <h2>Personal Data:</h2>
 
             <label for="fullName">Full Name :</label>
